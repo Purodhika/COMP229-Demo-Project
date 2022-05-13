@@ -1,15 +1,16 @@
 
 
-function sum(...args)
+function sumProd(a,b,...args)
 { 
 let total = 0;
+let prod  = a*b;
 for(const arg of args)
 {
 total+=arg;
 }
-return total;
+return [prod,total];
 }
 
 var myArray =[2, 6, 1, 5]; 
 
-console.log(sum(...myArray)); 
+console.log(sumProd(...myArray)); 

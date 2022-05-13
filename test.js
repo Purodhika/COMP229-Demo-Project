@@ -1,14 +1,15 @@
-//spread, rest
 
-function sum(...args){ //rest operator
-let totalsum = 0;
+
+function sum(...args)
+{ 
+let total = 0;
 for(const arg of args)
 {
-totalsum+=arg;
+total+=arg;
 }
-return totalsum;
+return total;
 }
 
-var myArray =[4,5,1,2]; 
+var myArray =[2, 6, 1, 5]; 
 
 console.log(sum(...myArray)); 
